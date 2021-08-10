@@ -1,11 +1,4 @@
-
 # SQL & Visualization Practice
-
-- Assignment start date: 05/15/20
-- Assignment due date: 05/19/20
-
-- onl01-dtsc-pt-041320
-
 
 ## Student Info
 
@@ -13,6 +6,8 @@
 - Partner Name (if applicable): 
 
 
+
+<img src="https://raw.githubusercontent.com/jirvingphd/dsc-mod-3-project-online-ds-ft-100719/master/Northwind_ERD_updated.png" width=400px>
 
 # Instructions:
 
@@ -41,28 +36,29 @@
 
 
 
-## Questions
+## Questions to Answer
 
-> Question 1: 
- - Does being discounted amount have an effect on the quantity of a product in an order (binary comparison, discount/no discount)? 
+-  **Question 1:  Does being discounted have an effect on the quantity of a product in an order (binary comparison, discount/no discount)?**
  - If so, at what level(s) of discount (multiple-group comparison)?
  
-> Question 2: 
- - Does the time of year total Quantities sold? (The time period analyzed is up to you: month,quarter, etc.) 
+ 
+ 
+- **Question 2:  Does the time of year total Quantities sold?** (The time period analyzed is up to you: month,quarter, etc.) 
 
-> Question 3 (Optional):
-- Think of one additional question  that you can answer to give Northwind some helpul business insights.
+
+
+- **Question 3 (Optional): think of one additional question**  that you can answer to give Northwind some helpul business insights.
 
 ## Visualization Requirements
 
-- **All visualizations (all `fig` objects) should be stored in one dictionary, called `figures` so that they can be displayed together in one final summary cell.**
+<!-- - **All visualizations (all `fig` objects) should be stored in one dictionary, called `figures` so that they can be displayed together in one final summary cell.**
 
 ```python
 for question, fig in figures.items():
     print(f"\n\n{question}")
     display(fig)
     
-```
+``` -->
 - **You must create figures using at least 2 out fo the following ways/approaches to making/starting a figure:**
     1. Use `fig,ax=plt.subplots` to start the figure and then use `ax` to do all of your plotting (e.g. `ax.bar`, `ax.scatter`)
     2. Start a figure with Pandas and then update the axis labels and title outside using the `ax` object that pandas returns combined with `ax.set_` methods.
@@ -131,8 +127,22 @@ for question, fig in figures.items():
 
 ```python
 import os
-os.listdir()
+sorted(os.listdir())
 ```
+
+
+
+
+    ['.git',
+     '.gitattributes',
+     '.gitignore',
+     '.ipynb_checkpoints',
+     'Northwind_ERD_updated.png',
+     'Northwind_small.sqlite',
+     'README.md',
+     'student.ipynb']
+
+
 
 
 ```python
@@ -199,11 +209,11 @@ figures ={}
 
 > ...
 
-# Final Printout of All Figures
+# Conclusions
+
+- Recap your 3 questions and answers.
 
 
 ```python
-for question, fig in figures.items():
-    print(f"\n\n{question}")
-    display(fig)
+
 ```
